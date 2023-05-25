@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Моя библиотека</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Моя библиотека</h1>
+		<input type="text" id="find-book" placeholder="Поиск книг">
+		<button onclick="findBook()">Найти</button>
+	</header>
+	<main>
+		<section id="filters">
+            <h2>Фильтры</h2>
+            <label for="author-filter">По автору</label>
+            <input type="text" id="author-filter">
+            <label for="genre-filter">По жанру</label>
+            <input type="text" id="genre-filter">
+            <button onclick="applyFilters()">Применить</button>
+          </section>
+		<section id="book-list">
+			<h2>Список книг</h2>
+			<ul>
+				<li>
+					<h3>Название книги</h3>
+					<p>Автор книги</p>
+					<p>Жанр книги</p>
+					<button>Удалить</button>
+				</li>
+				<li>
+					<h3>Название книги</h3>
+					<p>Автор книги</p>
+					<p>Жанр книги</p>
+					<button>Удалить</button>
+				</li>
+			</ul>
+			<button id="add-book">Добавить книгу</button>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Моя библиотека</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
